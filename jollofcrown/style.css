@@ -1,0 +1,154 @@
+body {
+      font-family: sans-serif;
+      background: #fff8f0;
+      padding: 40px;
+    }
+
+    .tabs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .tab-labels {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+
+    .tab-labels label {
+      background: #a333ff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .tab-labels label:hover {
+      background: #2622ff;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    .tab-content section {
+      display: none;
+      padding: 20px;
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    #starters:checked ~ .tab-content section:nth-of-type(1),
+    #mains:checked ~ .tab-content section:nth-of-type(2),
+    #desserts:checked ~ .tab-content section:nth-of-type(3),
+    #drinks:checked ~ .tab-content section:nth-of-type(4) {
+      display: block;
+    }
+    .restaurant {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #5e1152;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .restaurant::before {
+      content: "🍽 "; 
+    }       
+    .starters, .mains, .desserts, .drinks {
+      margin: 10px 0;
+      font-size: 1.2em;
+      font-style: italic;
+    }
+    .starters::before {
+      content: "🍲 ";
+      
+    }
+    .mains::before {
+      content: "🍛 ";
+    }
+    .desserts::before {
+      content: "🍰 ";
+    }
+    .drinks::before {
+      content: "🍹 ";
+    }
+    .food-card {
+      background-color: #f0f0f0;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 10px auto;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: 0.3s ease;
+    }
+    .food-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .food-title{
+      font-size: 1.4em;
+      color: #a333ff;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-family: 'Georgia', cursive;
+    }
+    .description {
+      font-size: 1em;
+      color: #555;
+      margin: 10px 0;
+    }
+    .price{
+      font-size: 1.2em;
+      color: #ff33e4;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .food-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .tagline {
+      font-size: 1em;
+      color: #9c8888;
+      font-weight: bold;
+      margin-top: 20px;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+    }
+.owners::before {
+  content: "👩🏾‍🍳 ";
+}
+.owners::after {
+  content: " 👨🏻‍🍳"
+}
+.owners{
+  font-size: 1.2em;
+  color: #5e1152;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+.owners-description {
+  font-size: 1em;
+  color: #555;
+  margin: 10px 0;
+  text-align: center;
+  font-family: 'Georgia', cursive;
+}
+.line-break {
+  width: 100%;
+  height: 2px;
+  background-color: #b90f48;
+  margin: 20px 0;
+}
